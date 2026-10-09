@@ -1,7 +1,7 @@
 # Установка @h1w0rld/dsh-harness-guard
 
 Образец — так установлен соседний @h1w0rld/dsh-recovery-resume (см. сравнение
-`/opt/projects/harness/dsh-recovery-resume` ↔ `/dsh/.dsh/profiles/web/node_modules/@h1w0rld/dsh-recovery-resume`).
+`/opt/projects/<harness>/dsh-recovery-resume` ↔ `/dsh/.dsh/profiles/web/node_modules/@h1w0rld/dsh-recovery-resume`).
 `dsh plugin add` — обёртка над `pnpm add` (проверено: `dsh plugin add --profile web --help`
 показывает Usage: pnpm add). Установка требует рестарта dsh — НЕ выполнять без
 явного согласия пользователя.
@@ -9,13 +9,13 @@
 ## Шаги
 
 1. Проверить место: `df -h /` (пакет ~десятки КБ, зависимостей нет).
-2. Проверить, что источник на месте: `ls /opt/projects/harness/dsh-harness-guard/lib/index.js`.
+2. Проверить, что источник на месте: `ls /opt/projects/<harness>/dsh-harness-guard/lib/index.js`.
 3. Установить как file:-зависимость профиля:
    ```
-   dsh plugin --profile web add file:/opt/projects/harness/dsh-harness-guard
+   dsh plugin --profile web add file:/opt/projects/<harness>/dsh-harness-guard
    ```
    Это допишет в `/dsh/.dsh/profiles/web/package.json` строку вида
-   `"@h1w0rld/dsh-harness-guard": "file:../../../../opt/projects/harness/dsh-harness-guard"`
+   `"@h1w0rld/dsh-harness-guard": "file:../../../../opt/projects/<harness>/dsh-harness-guard"`
    (как у recovery-resume/messenger-ru) и зальёт пакет в
    `/dsh/.dsh/profiles/web/node_modules/@h1w0rld/dsh-harness-guard`.
 4. Роутер: `dsh.bundle.patch` из package.json → `cordis.patch.yml` плагина

@@ -1,5 +1,5 @@
 # Bundle patch: регистрирует плагин в ростере web-профиля.
-# Ставится: dsh plugin --profile web add file:/opt/projects/harness/dsh-harness-guard
+# Ставится: dsh plugin --profile web add file:/opt/projects/<harness>/dsh-harness-guard
 - insert:
     - id: harness-guard
       name: '@h1w0rld/dsh-harness-guard'

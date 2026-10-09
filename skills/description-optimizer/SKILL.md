@@ -50,8 +50,8 @@ Philosophy (пересмотрено 2026-10-04 после фидбека «су
 Для тулов плагинов DSH (memory/dtodo, task_board_*, de_channel_send): описания лежат в lib/*.js внутри `~/.dsh/profiles/web/node_modules`, править через `pnpm patch` (patches/ переживают переустановку). Та же методология: скор-фёрст, трогать только провал, ≤250. Грабли: `'` экранировать как `\'` в JS-строках, не съесть запятую, проверять `node --check`. Remote MCP (jev, deploychan) — описания клиентом не правятся, только отключение.
 
 ## Реальный срез каталога (2026-10-07)
-Модель видит в каталоге только первые `maxDescLength` (=100) символов описания (dsh-skill-folder); хост режет до 500. Поэтому: триггер и «Use when» — в первых 100 символах, хвост работает только для skill_search. Проверка: `python3 /opt/projects/harness/tools/skill-eval/skill-eval.py --cut 100 [--overrides new.json]` (до применения) и `tools/skill-lint.py`. Подробности: notes/skills-harness-review.md.
+Модель видит в каталоге только первые `maxDescLength` (=100) символов описания (dsh-skill-folder); хост режет до 500. Поэтому: триггер и «Use when» — в первых 100 символах, хвост работает только для skill_search. Проверка: `python3 /opt/projects/<harness>/tools/skill-eval/skill-eval.py --cut 100 [--overrides new.json]` (до применения) и `tools/skill-lint.py`. Подробности: notes/skills-harness-review.md.
 
 ## Проверка здоровья всего харнеса одной командой
-`/opt/projects/harness/tools/harness-check.sh [--no-eval]`: skill-lint, skill-eval (>=85%), check-patches, бюджет каталога <=5k токенов, ссылки в AGENTS.md, состояние dsh.service. `--no-eval` — без сетевого шага (jev).
-После любой массовой переписи описаний прогонять `python3 /opt/projects/harness/tools/skill-fidelity.py` (сверка описания с телом скилла и оригиналом через Jev): eval маршрутизации не ловит искажения смысла — «проходит кейс» ≠ «описание всё ещё правдиво».
+`/opt/projects/<harness>/tools/harness-check.sh [--no-eval]`: skill-lint, skill-eval (>=85%), check-patches, бюджет каталога <=5k токенов, ссылки в AGENTS.md, состояние dsh.service. `--no-eval` — без сетевого шага (jev).
+После любой массовой переписи описаний прогонять `python3 /opt/projects/<harness>/tools/skill-fidelity.py` (сверка описания с телом скилла и оригиналом через Jev): eval маршрутизации не ловит искажения смысла — «проходит кейс» ≠ «описание всё ещё правдиво».

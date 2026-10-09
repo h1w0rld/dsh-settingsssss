@@ -9,8 +9,8 @@ description: "NotebookLM с VPS. Use when «спроси NotebookLM», ноут�
 
 ## Окружение
 
-- Venv: `/opt/projects/harness/notebooklm/.venv` (Python 3.12, notebooklm-py 0.8.4, extras [browser]+[headless])
-- CLI: `/opt/projects/harness/notebooklm/.venv/bin/notebooklm`
+- Venv: `/opt/projects/<harness>/notebooklm/.venv` (Python 3.12, notebooklm-py 0.8.4, extras [browser]+[headless])
+- CLI: `/opt/projects/<harness>/notebooklm/.venv/bin/notebooklm`
 - Профили/сессии: `/dsh/.notebooklm/profiles/<profile>/storage_state.json` (и master_token.json)
 - Браузер для логина: системный google-chrome-stable (`--browser chrome`), НЕ скачивать Chromium через playwright (~170 МБ, диск критичен)
 
@@ -28,7 +28,7 @@ description: "NotebookLM с VPS. Use when «спроси NotebookLM», ноут�
 ## Базовые команды
 
 ```bash
-NBLM=/opt/projects/harness/notebooklm/.venv/bin/notebooklm
+NBLM=/opt/projects/<harness>/notebooklm/.venv/bin/notebooklm
 $NBLM list --json                          # список ноутбуков
 $NBLM create "Имя"                         # создать ноутбук
 $NBLM use <notebook_id>                    # выбрать активный

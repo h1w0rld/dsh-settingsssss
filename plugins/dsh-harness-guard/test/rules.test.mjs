@@ -104,8 +104,8 @@ test('write/edit в защищённые файлы → ask', () => {
     '/dsh/.dsh/profiles/web/package.json', '/dsh/.dsh/profiles/web/pnpm-workspace.yaml',
     '/dsh/.dsh/profiles/web/patches/x.patch', '/dsh/.dsh/skills-manager/state.json',
     '/etc/fstab', '/etc/systemd/system/x.service', '/etc/ssh/sshd_config',
-    '/opt/projects/harness/backups/a.tar.gz', '/opt/projects/harness/tools/golden.manifest',
-    '/opt/projects/harness/dsh-harness-guard/lib/rules.js']) {
+    '/opt/projects/<harness>/backups/a.tar.gz', '/opt/projects/<harness>/tools/golden.manifest',
+    '/opt/projects/<harness>/dsh-harness-guard/lib/rules.js']) {
     assert.ok(classify({ name: 'write', arguments: { file_path: p, content: 'x' } })?.kind === 'ask', p)
     assert.ok(classify({ name: 'edit', arguments: { file_path: p, old_string: 'a', new_string: 'b' } })?.kind === 'ask', p)
   }
@@ -125,7 +125,7 @@ test('безопасные команды → null', () => {
     'find /dsh -name x', 'rm -rf ./node_modules', 'rm -rf /tmp/skill-test', 'git status',
     'git push origin main', 'df -h /', 'systemctl status dsh.service', 'systemctl is-active dsh.service',
     'journalctl -u dsh.service -n 50', 'docker ps', 'docker logs web', 'docker inspect web',
-    'sed -i "s/a/b/" /opt/projects/harness/notes/x.md', 'python3 tools/skill-lint.py',
+    'sed -i "s/a/b/" /opt/projects/<harness>/notes/x.md', 'python3 tools/skill-lint.py',
     'node tools/staging/alias-test.mjs --run', 'pnpm run build', 'echo hi > /tmp/x',
     'iptables -L -n', 'ufw status', 'systemctl restart nginx', 'lsblk', 'cat /etc/fstab',
     'cp /dsh/.dsh/profiles/web/cordis.patch.yml /tmp/backup.yml',
@@ -134,7 +134,7 @@ test('безопасные команды → null', () => {
 })
 
 test('write/edit в обычные файлы → null', () => {
-  assert.equal(classify({ name: 'write', arguments: { file_path: '/opt/projects/harness/notes/x.md', content: 'x' } }), null)
+  assert.equal(classify({ name: 'write', arguments: { file_path: '/opt/projects/<harness>/notes/x.md', content: 'x' } }), null)
   assert.equal(classify({ name: 'edit', arguments: { file_path: 'notes/x.md', old_string: 'a', new_string: 'b' } }), null)
 })
 

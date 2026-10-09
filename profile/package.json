@@ -3,9 +3,9 @@
   "private": true,
   "dependencies": {
     "@goodandready/dsh-russian-lang": "^0.3.35",
-    "@h1w0rld/dsh-harness-guard": "file:/opt/projects/harness/dsh-harness-guard",
-    "@h1w0rld/dsh-messenger-ru": "file:/opt/projects/harness/dsh-messenger-ru",
-    "@h1w0rld/dsh-recovery-resume": "file:/opt/projects/harness/dsh-recovery-resume",
+    "@h1w0rld/dsh-harness-guard": "file:/opt/projects/<harness>/dsh-harness-guard",
+    "@h1w0rld/dsh-messenger-ru": "file:/opt/projects/<harness>/dsh-messenger-ru",
+    "@h1w0rld/dsh-recovery-resume": "file:/opt/projects/<harness>/dsh-recovery-resume",
     "@linxin666/dsh-client-ui-task-board": "0.4.4",
     "@michengai/dsh-skills-manager": "^1.1.9",
     "dsh-advisor": "^0.5.4",

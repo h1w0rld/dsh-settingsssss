@@ -4,7 +4,7 @@
 # с MANIFEST.sha256 внутри; снаружи — tools/golden.manifest (для harness-check.sh).
 # Использование: harness-backup.sh [--keep N=2] [--help]
 set -euo pipefail
-ROOT=/opt/projects/harness
+ROOT=/opt/projects/<harness>
 BK="$ROOT/backups"
 TS=$(date +%Y%m%d-%H%M%S)
 KEEP=2

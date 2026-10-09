@@ -9,8 +9,8 @@ description: "Use when просят обновить DSH/харнес или п�
 - **Ядро**: npm-пакет `@deepseek-ai/dsh` в `/opt/dsh`, бинарник `/usr/local/bin/dsh`, сервис `dsh.service` (`ExecStart=/usr/local/bin/dsh web --no-open`, WorkingDirectory=/opt/projects).
 - **Профиль плагинов**: `/root/.dsh/profiles/web` (package.json + pnpm). Плагины ставятся туда, НЕ в /opt/dsh.
 - **Кастомные плагины** (file:-ссылки):
-  - `@h1w0rld/dsh-messenger-ru` → `/opt/projects/harness/dsh-messenger-ru` (Telegram-бот, токен в /opt/dsh/telegram.env)
-  - `@h1w0rld/dsh-recovery-resume` → `/opt/projects/harness/dsh-recovery-resume` (peers пустые — совместим всегда)
+  - `@h1w0rld/dsh-messenger-ru` → `/opt/projects/<harness>/dsh-messenger-ru` (Telegram-бот, токен в /opt/dsh/telegram.env)
+  - `@h1w0rld/dsh-recovery-resume` → `/opt/projects/<harness>/dsh-recovery-resume` (peers пустые — совместим всегда)
 - **ВАЖНО (2026-09-30): DSH грузит кастомный плагин из УСТАНОВЛЕННОЙ КОПИИ** `/root/.dsh/profiles/web/node_modules/@h1w0rld/dsh-messenger-ru/`, а НЕ из file:-исходников. Починил исходники — скопируй результат и в копию (`cp -r dist "$P/"`), иначе сервис продолжит падать со старым кодом. Правки надо вносить/синхронизировать в ОБОИХ местах; исходники = истина, профильная копия = рабочая.
 
 ## Порядок обновления
@@ -31,7 +31,7 @@ description: "Use when просят обновить DSH/харнес или п�
 - **Профиль-оверлей** `/root/.dsh/profiles/web/cordis.patch.yml`: невалидный YAML молча ломает весь оверлей (видно в warnings config_backup). Валидатор — сам `dsh web --dump-config` (стандартный js-yaml не знает тегов `!!js`).
 - **`ctx.settings.register` отсутствует** в 0.1.7 — messenger-ru имеет fallback на статический entryConfig (dist/index.js, блок `typeof ctx.settings?.register === 'function'`; закоммичен 2026-09-30 в `ea9d489` — до этого существовал только в несохранённых правках и терялся при порче dist).
 - Диск 9.8 ГБ: перед npm install `df -h /`, при нехватке `npm cache clean --force`.
-- file:-пути в profile package.json должны указывать на `/opt/projects/harness/{dsh-messenger-ru,dsh-recovery-resume}` (бывали битые).
+- file:-пути в profile package.json должны указывать на `/opt/projects/<harness>/{dsh-messenger-ru,dsh-recovery-resume}` (бывали битые).
 
 ## После мажорного обновления
 Проверить живость кастомных функций: Telegram-бот (сообщение + /stt-панель с gigaam), recovery-resume (журнал «бут-скан»), русский язык UI, сайдбар. Поднять peerDependencies кастомных плагинов под новое ядро, убрать несуществующие пакеты, переустановить с --ignore-scripts. Сверить список пакетов @deepseek-ai/* в /opt/dsh/node_modules (в 0.2.0 исчез @deepseek-ai/dsh-client-runtime).
@@ -43,7 +43,7 @@ description: "Use when просят обновить DSH/харнес или п�
 ## Патчи сторонних плагинов и pnpm-политики
 - Патчи: `/dsh/.dsh/profiles/web/patches/`, реестр — секция `patchedDependencies` в `pnpm-workspace.yaml` (сейчас: `dsh-memory-evolve@0.1.0`, `@linxin666/dsh-client-ui-task-board`).
 - Ключ патча привязан к версии → после обновления плагина патч может НЕ примениться молча.
-- ШАГ ПОСЛЕ ОБНОВЛЕНИЯ: запустить `/opt/projects/harness/tools/check-patches.sh` (только чтение); при расхождении — пересобрать патч (`pnpm patch` / `pnpm patch-commit`) или убрать устаревшую запись.
+- ШАГ ПОСЛЕ ОБНОВЛЕНИЯ: запустить `/opt/projects/<harness>/tools/check-patches.sh` (только чтение); при расхождении — пересобрать патч (`pnpm patch` / `pnpm patch-commit`) или убрать устаревшую запись.
 - `minimumReleaseAgeExclude` в `pnpm-workspace.yaml` хранит версии плагинов — обновлять вместе с версиями.
 - Перед обновлением — бэкап `profiles/web/{package.json,pnpm-workspace.yaml,pnpm-lock.yaml,patches}`.
 - Пользовательские правки описаний в `/dsh/.agents/skills` перезаписываются при обновлении стороннего скилла → после обновлений прогонять `tools/skill-lint.py` и `tools/skill-eval/skill-eval.py` (если есть).

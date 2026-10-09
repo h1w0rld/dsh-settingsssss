@@ -26,9 +26,9 @@ const PROTECTED = [
   '/etc/fstab',
   '/etc/systemd/',
   '/etc/ssh/',
-  '/opt/projects/harness/backups/',
-  '/opt/projects/harness/tools/golden.manifest',
-  '/opt/projects/harness/dsh-harness-guard/',
+  '/opt/projects/<harness>/backups/',
+  '/opt/projects/<harness>/tools/golden.manifest',
+  '/opt/projects/<harness>/dsh-harness-guard/',
 ]
 
 const DISK_TOOLS = /\b(mkfs\S*|wipefs|fdisk|sfdisk|cfdisk|gdisk|parted|mount|umount|swapon|swapoff|chattr)\b/

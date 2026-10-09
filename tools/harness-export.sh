@@ -93,6 +93,16 @@ if grep -rn "4478239[2]5" "$REPO_DIR" --exclude-dir=.git; then
   echo "ОШИБКА: в экспорте остался chat id — санитизация не сработала"; exit 1
 fi
 
+# 7.6) санитизация личного пути стенда: /opt/projects/harness -> /opt/projects/<harness>
+log "санитизация HARNESS_DIR (личный путь в текстовых файлах, кроме этого скрипта)"
+find "$REPO_DIR" -path "$REPO_DIR/.git" -prune -o -type f -print0 \
+  | grep -zv "^$REPO_DIR/tools/harness-export.sh$" \
+  | xargs -0 -r grep -lIFa "/opt/projects/harness" \
+  | xargs -0 -r sed -i "s#/opt/projects/harness#/opt/projects/<harness>#g"
+if grep -rn "opt/projects/harness" "$REPO_DIR" --exclude-dir=.git --exclude=harness-export.sh; then
+  echo "ОШИБКА: в экспорте остался личный путь — санитизация не сработала"; exit 1
+fi
+
 # 8) итог
 log "git diff --stat:"
 git -C "$REPO_DIR" diff --stat || true

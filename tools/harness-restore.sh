@@ -5,9 +5,9 @@
 # (сначала снимок изменяемых файлов в backups/pre-restore-<ts>.tar.zst).
 # Использование: harness-restore.sh [архив] [--apply] [--root DIR] [--help]
 #   архив    по умолчанию — новейший backups/harness-golden-*.tar.zst
-#   --root   подменить корни для теста: <root>/dsh = /dsh, <root>/harness = /opt/projects/harness
+#   --root   подменить корни для теста: <root>/dsh = /dsh, <root>/harness = /opt/projects/<harness>
 set -euo pipefail
-ROOT=/opt/projects/harness
+ROOT=/opt/projects/<harness>
 BK="$ROOT/backups"
 STAGE="$ROOT/tools/staging/p6-restore-tmp"
 APPLY=0; ARC=""; ALTROOT=""

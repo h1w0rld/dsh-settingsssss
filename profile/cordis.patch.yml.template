@@ -3,7 +3,7 @@
 # overrides, disables, and insert lists; `!!js` expressions allowed).
 # dsh-skill-folder (2026-10-02, npm 0.3.4): статический cache-stable каталог
 # скиллов + skill_search (BM25) + autoRoute <skill-route> хинт. Самописный
-# dsh-skill-hinter полностью удалён (источник сохранён в /opt/projects/harness/dsh-skill-hinter).
+# dsh-skill-hinter полностью удалён (источник сохранён в /opt/projects/<harness>/dsh-skill-hinter).
 - insert:
     - id: skill-folder
       name: 'dsh-skill-folder'

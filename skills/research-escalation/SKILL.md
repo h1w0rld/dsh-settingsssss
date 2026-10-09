@@ -15,7 +15,7 @@ description: "Use when не уверен в факте (версия, API, фл�
 - Пользователь просит «нагугли/посмотри в доке».
 
 ## Лестница (от дешёвого к дорогому, остановись, когда ответ надёжен)
-1. **Локально:** `<cmd> --help`, `man`, исходники в `node_modules`/`/opt/dsh`, `grep` по репо, заметки `/opt/projects/harness/notes/`.
+1. **Локально:** `<cmd> --help`, `man`, исходники в `node_modules`/`/opt/dsh`, `grep` по репо, заметки `/opt/projects/<harness>/notes/`.
 2. **Память:** `memory list filter=<тема>` — возможно, это уже решали.
 3. **Официальная документация / репозиторий:** `web_fetch` на конкретный URL (README, docs, release notes).
 4. **Веб-поиск:** скилл `researcher` (quick-scan для факта, deep-research для сравнений).

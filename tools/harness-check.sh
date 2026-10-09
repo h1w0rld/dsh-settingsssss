@@ -7,7 +7,7 @@
 #   --help       справка. Пункты: lint, eval, патчи, AGENTS, systemd, aliases,
 #   дрейф золотого набора (tools/golden.manifest), guard-тесты, нумерация AGENTS 1–11.
 set -u
-cd "$(dirname "$0")/.."   # корень проекта /opt/projects/harness
+cd "$(dirname "$0")/.."   # корень проекта /opt/projects/<harness>
 NO_EVAL=0; FIDELITY=0
 for a in "$@"; do
   case "$a" in
@@ -162,7 +162,7 @@ if [ -f tools/golden.manifest ]; then
       ./profile-web-*) live=/dsh/.dsh/profiles/web/${path#./profile-web-} ;;
       ./profile-patches/*) live=/dsh/.dsh/profiles/web/patches/${path#./profile-patches/} ;;
       ./skills-manager-state.json) live=/dsh/.dsh/skills-manager/state.json ;;
-      ./tools/*|./notes/*|./dsh-harness-guard/*) live=/opt/projects/harness/${path#./} ;;
+      ./tools/*|./notes/*|./dsh-harness-guard/*) live=/opt/projects/<harness>/${path#./} ;;
       *) continue ;;
     esac
     if [ -f "$live" ]; then
