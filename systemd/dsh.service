@@ -1,0 +1,21 @@
+# Шаблон /etc/systemd/system/dsh.service — по notes/dsh-restart.md и STEPLOG.
+# Реальные env-значения — через EnvironmentFile (/opt/dsh/telegram.env, /opt/dsh/llm.env), не в юните.
+[Unit]
+Description=DSH (DeepSeek Harness)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+Environment=HOME=/dsh
+Environment=DSH_HOME=/dsh/.dsh
+Environment=DSH_LOCALE=en
+EnvironmentFile=/opt/dsh/telegram.env
+EnvironmentFile=/opt/dsh/llm.env
+ExecStart=/usr/bin/env dsh web --no-open
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

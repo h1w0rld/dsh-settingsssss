@@ -1,0 +1,41 @@
+{
+  "name": "dsh-profile-web",
+  "private": true,
+  "dependencies": {
+    "@goodandready/dsh-russian-lang": "^0.3.35",
+    "@h1w0rld/dsh-harness-guard": "file:/opt/projects/harness/dsh-harness-guard",
+    "@h1w0rld/dsh-messenger-ru": "file:/opt/projects/harness/dsh-messenger-ru",
+    "@h1w0rld/dsh-recovery-resume": "file:/opt/projects/harness/dsh-recovery-resume",
+    "@linxin666/dsh-client-ui-task-board": "0.4.4",
+    "@michengai/dsh-skills-manager": "^1.1.9",
+    "dsh-advisor": "^0.5.4",
+    "dsh-better-sidebar": "^0.24.1",
+    "dsh-config-manager": "^0.1.68",
+    "dsh-context": "^0.63.0",
+    "dsh-memory-evolve": "github:csyangwen/dsh-memory-evolve",
+    "dshmarket": "^1.66.8"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "@h1w0rld/dsh-messenger-ru",
+        "@deepseek-ai/dsh-experimental-agent-team-profile",
+        "@deepseek-ai/dsh-experimental-auto-review",
+        "dshmarket",
+        "dsh-context",
+        "@michengai/dsh-skills-manager",
+        "dsh-better-sidebar",
+        "dsh-config-manager",
+        "@linxin666/dsh-client-ui-task-board",
+        "@h1w0rld/dsh-harness-guard",
+        "@h1w0rld/dsh-recovery-resume",
+        "@goodandready/dsh-russian-lang",
+        "dsh-memory-evolve",
+        "dsh-advisor"
+      ],
+      "patchReload": "live"
+    }
+  }
+}

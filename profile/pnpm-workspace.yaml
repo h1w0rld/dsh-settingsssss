@@ -1,0 +1,18 @@
+packages:
+  - .
+
+nodeLinker: hoisted
+autoInstallPeers: false
+minimumReleaseAgeExclude:
+  - '@goodandready/dsh-russian-lang@0.3.12 || 0.3.15 || 0.3.19'
+  - dsh-context@0.57.0 || 0.58.0 || 0.59.2 || 0.60.0 || 0.62.2
+  - dshmarket
+  - '@linxin666/dsh-client-ui-task-board@0.4.3 || 0.4.4'
+  - '@linxin666/dsh-client-ui-skill-explorer@0.4.3'
+  - dsh-better-sidebar@0.22.0 || 0.22.1
+  - dsh-config-manager@0.1.65 || 0.1.66 || 0.1.68
+  - dsh-advisor@0.5.2 || 0.5.4
+  - '@michengai/dsh-skills-manager@1.1.9'
+patchedDependencies:
+  '@linxin666/dsh-client-ui-task-board': patches/@linxin666__dsh-client-ui-task-board.patch
+  dsh-memory-evolve@0.1.0: patches/dsh-memory-evolve@0.1.0.patch

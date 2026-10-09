@@ -1,0 +1,1442 @@
+[
+ {
+  "skill": "skill-creator",
+  "q": "напиши скилл для деплоя nginx"
+ },
+ {
+  "skill": "skill-creator",
+  "q": "create a new skill from this workflow"
+ },
+ {
+  "skill": "brainstorming",
+  "q": "давай сделаем дашборд для статистики бота"
+ },
+ {
+  "skill": "systematic-debugging",
+  "q": "у меня падает тест и я не понимаю почему"
+ },
+ {
+  "skill": "tdd",
+  "q": "реализуй функцию парсинга через TDD"
+ },
+ {
+  "skill": "code-review",
+  "q": "сделай ревью моих изменений с прошлого коммита"
+ },
+ {
+  "skill": "3x-ui-setup",
+  "q": "подними VPN на новом VPS с 3x-ui"
+ },
+ {
+  "skill": "xrayebator",
+  "q": "настрой Xray Reality VLESS без домена"
+ },
+ {
+  "skill": "vpn-tspu-research",
+  "q": "разбери репозиторий против DPI ТСПУ и протестируй подход"
+ },
+ {
+  "skill": "fstab-disk-safety",
+  "q": "надо поменять fstab и смонтировать новый диск"
+ },
+ {
+  "skill": "pizdec",
+  "q": "проведи аудит безопасности сервера"
+ },
+ {
+  "skill": "dsh-update",
+  "q": "обнови DSH и плагины на стенде"
+ },
+ {
+  "skill": "agent-browser",
+  "q": "открой сайт и сделай скриншот страницы"
+ },
+ {
+  "skill": "researcher",
+  "q": "найди в интернете актуальную инфу про vLLM"
+ },
+ {
+  "skill": "notebooklm",
+  "q": "спроси мой ноутбук в NotebookLM"
+ },
+ {
+  "skill": "google-flights",
+  "q": "сколько стоит рейс Сеул Токио в Google Flights"
+ },
+ {
+  "skill": "pricewin-hotel-deal-finder",
+  "q": "где дешевле отель в Токио, Booking или Agoda"
+ },
+ {
+  "skill": "restaurant-booking",
+  "q": "забронируй столик на двоих на пятницу"
+ },
+ {
+  "skill": "travel-planner",
+  "q": "составь маршрут на 5 дней по Японии"
+ },
+ {
+  "skill": "voice-summary",
+  "q": "сделай выжимку из этого голосового"
+ },
+ {
+  "skill": "emotional-support",
+  "q": "мне тяжело, хочу поговорить"
+ },
+ {
+  "skill": "gsap-scrolltrigger",
+  "q": "анимация с pin при скролле на GSAP"
+ },
+ {
+  "skill": "gsap-timeline",
+  "q": "последовательность анимаций gsap timeline"
+ },
+ {
+  "skill": "gsap-react",
+  "q": "useGSAP в React компоненте"
+ },
+ {
+  "skill": "animate",
+  "q": "сделай анимацию появления карточки, чтобы ощущалась живой"
+ },
+ {
+  "skill": "animate-expo",
+  "q": "анимация bottom sheet в Expo с жестом"
+ },
+ {
+  "skill": "find-animation-opportunities",
+  "q": "найди места в UI где не хватает анимаций"
+ },
+ {
+  "skill": "mobile-native",
+  "q": "на телефоне при фокусе на input страница зумится"
+ },
+ {
+  "skill": "frontend-design",
+  "q": "сделай красивый лендинг с характером"
+ },
+ {
+  "skill": "break-ui",
+  "q": "проверь компонент на длинных именах и пустых данных"
+ },
+ {
+  "skill": "vercel-react-best-practices",
+  "q": "оптимизируй производительность Next.js приложения"
+ },
+ {
+  "skill": "write-swift",
+  "q": "напиши Swift-код с actor и Sendable"
+ },
+ {
+  "skill": "memory-consolidate",
+  "q": "объедини и почисти накопленную память"
+ },
+ {
+  "skill": "handoff",
+  "q": "сделай handoff документ для другого агента"
+ },
+ {
+  "skill": "grilling",
+  "q": "прогрилль меня по этому плану"
+ },
+ {
+  "skill": "to-spec",
+  "q": "преврати наш разговор в спеку и опубликуй в трекер"
+ },
+ {
+  "skill": "to-tickets",
+  "q": "разбей спеку на тикеты"
+ },
+ {
+  "skill": "implement",
+  "q": "реализуй тикет из спеки"
+ },
+ {
+  "skill": "jevgrep",
+  "q": "как работает авторизация в этом репо, где это в коде"
+ },
+ {
+  "skill": "description-optimizer",
+  "q": "оптимизируй описания скиллов"
+ },
+ {
+  "skill": "zaebal",
+  "q": "установи заебал"
+ },
+ {
+  "skill": "pr",
+  "q": "напиши описание PR"
+ },
+ {
+  "skill": "retro",
+  "q": "сделай ретро этой сессии"
+ },
+ {
+  "skill": "wizard",
+  "q": "сделай интерактивный bash-визард по шагам для человека"
+ },
+ {
+  "skill": "typesafe-ai",
+  "q": "как собрать приложение на System One / Jev"
+ },
+ {
+  "skill": "elevenlabs-living-voice",
+  "q": "подготовь текст для озвучки в ElevenLabs"
+ },
+ {
+  "skill": "css-graphics",
+  "q": "нарисуй картинку на CSS/SVG и отрендери в PNG"
+ },
+ {
+  "skill": "obsidian-dataweave",
+  "q": "обработай заметки Obsidian, атомизируй их"
+ },
+ {
+  "skill": "improve-codebase-architecture",
+  "q": "найди возможности углубить архитектуру кодовой базы"
+ },
+ {
+  "skill": "domain-modeling",
+  "q": "давай уточним терминологию домена проекта"
+ },
+ {
+  "skill": "wayfinder",
+  "q": "спланируй огромный объём работы на несколько сессий"
+ },
+ {
+  "skill": "triage",
+  "q": "разбери входящие issues по ролям триажа"
+ },
+ {
+  "skill": "find-skills",
+  "q": "есть ли готовый скилл для работы с PDF?"
+ },
+ {
+  "skill": "aviasales",
+  "q": "найди дешёвые билеты Москва — Сеул на ноябрь"
+ },
+ {
+  "skill": "express-bus-booking",
+  "q": "забронируй экспресс-автобус Сеул — Пусан на пятницу"
+ },
+ {
+  "skill": "intercity-bus-booking",
+  "q": "билет на междугородний автобус Сеул — Кандын"
+ },
+ {
+  "skill": "jev-judge",
+  "q": "рассуди спор двух вариантов независимым судьёй"
+ },
+ {
+  "skill": "gsap-frameworks",
+  "q": "gsap в Vue и Svelte, lifecycle и cleanup"
+ },
+ {
+  "skill": "emil-design-eng",
+  "q": "почему кнопка ощущается дёшево, нужен polish микро-интеракций"
+ },
+ {
+  "skill": "pricewin-booking-assistant",
+  "q": "забронируй отель и доведи бронь до конца"
+ },
+ {
+  "skill": "apple-design",
+  "q": "сделай интерфейс в стиле iOS с физикой и blur"
+ },
+ {
+  "skill": "skill-creator",
+  "q": "напиши скилл который проверяет диск перед установкой"
+ },
+ {
+  "skill": "skill-creator",
+  "q": "сохрани этот процесс как скилл"
+ },
+ {
+  "skill": "fstab-disk-safety",
+  "q": "добавь tmpfs в fstab на 1.5G"
+ },
+ {
+  "skill": "fstab-disk-safety",
+  "q": "расширь раздел диска и смонтируй его"
+ },
+ {
+  "skill": "systematic-debugging",
+  "q": "сервис падает после рестарта, найди причину"
+ },
+ {
+  "skill": "brainstorming",
+  "q": "а что если добавить в бота кнопку повтора?"
+ },
+ {
+  "skill": "frontend-design",
+  "q": "дашборд выглядит скучно, сделай дизайн лучше"
+ },
+ {
+  "skill": "animate",
+  "q": "хочу плавный переход карточки при открытии"
+ },
+ {
+  "skill": "grilling",
+  "q": "прокритикуй мой план миграции"
+ },
+ {
+  "skill": "pricewin-price-comparison",
+  "q": "сравни цены на конкретный отель Lotte Seoul на Booking и Agoda"
+ },
+ {
+  "skill": "researcher",
+  "q": "нагугли, как настроить nginx для websocket"
+ },
+ {
+  "skill": "find-skills",
+  "q": "как мне сделать X, есть для этого скилл?"
+ },
+ {
+  "skill": "3x-ui-setup",
+  "q": "помоги поднять свой vpn на сервере, хочу vless reality для телефона"
+ },
+ {
+  "skill": "3x-ui-setup",
+  "q": "set up a proxy server on my fresh VPS with vless reality and 3x-ui"
+ },
+ {
+  "skill": "agent-browser",
+  "q": "открой сайт магазина и сделай скриншот главной страницы"
+ },
+ {
+  "skill": "agent-browser",
+  "q": "scrape the product prices from this page and fill the search form"
+ },
+ {
+  "skill": "animate",
+  "q": "сделай плавное появление карточки при наведении"
+ },
+ {
+  "skill": "animate",
+  "q": "add a smooth enter animation to this modal"
+ },
+ {
+  "skill": "animate-expo",
+  "q": "в react native приложении шторка снизу не двигается жестом, сделай как в ios"
+ },
+ {
+  "skill": "animate-expo",
+  "q": "expo router screen transition feels janky on device, fix the gesture"
+ },
+ {
+  "skill": "animation-vocabulary",
+  "q": "как называется эффект, когда список пружинит при скролле как резинка"
+ },
+ {
+  "skill": "animation-vocabulary",
+  "q": "what's this effect called when a card slides in with an apple-like ease"
+ },
+ {
+  "skill": "apple-design",
+  "q": "хочу чтобы лендинг выглядел как сайт apple, та же плавность"
+ },
+ {
+  "skill": "apple-design",
+  "q": "make this web app feel like a native macOS app"
+ },
+ {
+  "skill": "ask-matt",
+  "q": "есть ли у тебя скилл, чтобы прогнать мой план через жёсткую критику"
+ },
+ {
+  "skill": "ask-matt",
+  "q": "do you have a skill or flow for turning a spec into tickets"
+ },
+ {
+  "skill": "ask-sonner",
+  "q": "тосты sonner появляются дважды, как убрать дубль"
+ },
+ {
+  "skill": "ask-sonner",
+  "q": "how do I add a promise toast with sonner in react"
+ },
+ {
+  "skill": "aviasales",
+  "q": "сколько стоят билеты москва — банкок на конец марта"
+ },
+ {
+  "skill": "aviasales",
+  "q": "find cheap flights from seoul to tokyo in may"
+ },
+ {
+  "skill": "brainstorming",
+  "q": "давай добавим в приложение рейтинги, но я пока не уверен в деталях"
+ },
+ {
+  "skill": "brainstorming",
+  "q": "I want to add dark mode to the app, let's think it through first"
+ },
+ {
+  "skill": "break-ui",
+  "q": "проверь интерфейс на длинных именах и пустых значениях"
+ },
+ {
+  "skill": "break-ui",
+  "q": "stress test this form with emoji and huge values"
+ },
+ {
+  "skill": "browser-use",
+  "q": "подключись к уже открытому хрому по порту 9222 и вытащи данные со страницы"
+ },
+ {
+  "skill": "browser-use",
+  "q": "use raw CDP on port 9222 to take a screenshot of the open tab"
+ },
+ {
+  "skill": "code-review",
+  "q": "поревьюй изменения в ветке feature-auth перед мерджем"
+ },
+ {
+  "skill": "code-review",
+  "q": "review the changes since commit abc123 against the spec"
+ },
+ {
+  "skill": "codebase-design",
+  "q": "хочу сделать модуль оплаты глубже, чтобы наружу торчал маленький интерфейс"
+ },
+ {
+  "skill": "codebase-design",
+  "q": "help me decide where the seam between these services should go"
+ },
+ {
+  "skill": "css-graphics",
+  "q": "нарисуй лого в виде svg кодом и отрендери в png"
+ },
+ {
+  "skill": "css-graphics",
+  "q": "recreate this reference image as css art and render to png"
+ },
+ {
+  "skill": "description-optimizer",
+  "q": "прогони описания скиллов через оптимизацию, линтер ругается на триггеры"
+ },
+ {
+  "skill": "description-optimizer",
+  "q": "optimize our skill catalog descriptions and improve the triggers"
+ },
+ {
+  "skill": "diagnosing-bugs",
+  "q": "тест падает через раз, локально всё зелёное, воюю уже неделю"
+ },
+ {
+  "skill": "diagnosing-bugs",
+  "q": "p99 latency doubled after the release and I can't reproduce it locally"
+ },
+ {
+  "skill": "domain-modeling",
+  "q": "давай заведём глоссарий терминов проекта и разложим статусы заказа"
+ },
+ {
+  "skill": "domain-modeling",
+  "q": "we keep mixing order and shipment, help sharpen our domain model"
+ },
+ {
+  "skill": "dsh-update",
+  "q": "вышла новая версия харнеса, обнови ядро и плагины"
+ },
+ {
+  "skill": "dsh-update",
+  "q": "check if our custom plugins are compatible with the new DSH core"
+ },
+ {
+  "skill": "elevenlabs-living-voice",
+  "q": "подготовь этот текст под озвучку в elevenlabs, сейчас звучит как робот"
+ },
+ {
+  "skill": "elevenlabs-living-voice",
+  "q": "write this script for an elevenlabs voiceover with pauses and breathing"
+ },
+ {
+  "skill": "emil-design-eng",
+  "q": "кнопки и тосты есть, но интерфейс какой-то мёртвый, добавь микровзаимодействий"
+ },
+ {
+  "skill": "emil-design-eng",
+  "q": "improve the polish of this component, micro-interactions and timing"
+ },
+ {
+  "skill": "emotional-support",
+  "q": "мне грустно и хочется просто выговориться"
+ },
+ {
+  "skill": "emotional-support",
+  "q": "I had a rough day and just need someone to talk to"
+ },
+ {
+  "skill": "express-bus-booking",
+  "q": "нужно два билета на экспресс автобус сеул пусан на пятницу"
+ },
+ {
+  "skill": "express-bus-booking",
+  "q": "book a KOBUS express bus ticket from Seoul to Busan"
+ },
+ {
+  "skill": "find-animation-opportunities",
+  "q": "посмотри по коду, что у нас вообще можно анимировать"
+ },
+ {
+  "skill": "find-animation-opportunities",
+  "q": "where could this page use motion to feel more alive"
+ },
+ {
+  "skill": "find-skills",
+  "q": "есть ли где-то скилл для работы с нотион?"
+ },
+ {
+  "skill": "find-skills",
+  "q": "find a skill that can edit pdf files"
+ },
+ {
+  "skill": "frontend-design",
+  "q": "дашборд выглядит скупо, сделай красиво — типографика, цвета, сетка"
+ },
+ {
+  "skill": "frontend-design",
+  "q": "our landing page looks generic, redesign the visual style"
+ },
+ {
+  "skill": "fstab-disk-safety",
+  "q": "добавь новый диск в fstab, только чтобы сервер не упал при ребуте"
+ },
+ {
+  "skill": "fstab-disk-safety",
+  "q": "mount a tmpfs for /tmp safely in fstab"
+ },
+ {
+  "skill": "gsap-core",
+  "q": "сделай плавное появление блока на GSAP с ease-out"
+ },
+ {
+  "skill": "gsap-core",
+  "q": "how do I tween an SVG path opacity with GSAP?"
+ },
+ {
+  "skill": "gsap-frameworks",
+  "q": "как правильно подключить GSAP во Vue, чтобы чистилось за собой"
+ },
+ {
+  "skill": "gsap-frameworks",
+  "q": "GSAP animations in a Svelte component — how to scope selectors?"
+ },
+ {
+  "skill": "gsap-performance",
+  "q": "анимация на GSAP лагает при скролле, как убрать джанк"
+ },
+ {
+  "skill": "gsap-performance",
+  "q": "my GSAP animation drops below 60fps, how do I optimize it?"
+ },
+ {
+  "skill": "gsap-plugins",
+  "q": "хочу flip-переход между карточками при сортировке"
+ },
+ {
+  "skill": "gsap-plugins",
+  "q": "make this element draggable with inertia"
+ },
+ {
+  "skill": "gsap-react",
+  "q": "как использовать GSAP в React-компоненте через useGSAP"
+ },
+ {
+  "skill": "gsap-react",
+  "q": "GSAP cleanup on unmount in Next.js — what's the right way?"
+ },
+ {
+  "skill": "gsap-scrolltrigger",
+  "q": "сделай секцию, которая прилипает при скролле и анимируется"
+ },
+ {
+  "skill": "gsap-scrolltrigger",
+  "q": "add parallax to the hero image on scroll"
+ },
+ {
+  "skill": "gsap-timeline",
+  "q": "нужно чтобы три анимации шли друг за другом с небольшим перекрытием"
+ },
+ {
+  "skill": "gsap-timeline",
+  "q": "how do I sequence tweens with overlapping position parameters?"
+ },
+ {
+  "skill": "gsap-utils",
+  "q": "как в GSAP замапить прогресс скролла в диапазон значений"
+ },
+ {
+  "skill": "gsap-utils",
+  "q": "gsap random number between 1 and 10 snapped to integers?"
+ },
+ {
+  "skill": "grilling",
+  "q": "прокритикуй мой план миграции базы, найди дыры"
+ },
+ {
+  "skill": "grilling",
+  "q": "stress-test this startup idea before I build it"
+ },
+ {
+  "skill": "grill-me",
+  "q": "запусти grill-me"
+ },
+ {
+  "skill": "grill-me",
+  "q": "run /grill-me on this plan"
+ },
+ {
+  "skill": "handoff",
+  "q": "сожми наш разговор в документ для следующей сессии агента"
+ },
+ {
+  "skill": "handoff",
+  "q": "prepare a handoff doc so a fresh agent can continue this work"
+ },
+ {
+  "skill": "implement",
+  "q": "реализуй тикет AUTH-12 из спеки"
+ },
+ {
+  "skill": "implement",
+  "q": "start implementing ticket PAY-3 from the spec"
+ },
+ {
+  "skill": "implement-spec",
+  "q": "реализуй всю спеку, все тикеты параллельно"
+ },
+ {
+  "skill": "implement-spec",
+  "q": "implement the whole spec on one integration branch with subagents"
+ },
+ {
+  "skill": "improve-animations",
+  "q": "улучши анимации в приложении, сделай аудит и план"
+ },
+ {
+  "skill": "improve-animations",
+  "q": "audit our motion code and give me a roadmap of fixes"
+ },
+ {
+  "skill": "improve-codebase-architecture",
+  "q": "найди в кодовой базе модули, которые стоит переработать архитектурно"
+ },
+ {
+  "skill": "improve-codebase-architecture",
+  "q": "scan the codebase for deepening opportunities and show a report"
+ },
+ {
+  "skill": "intercity-bus-booking",
+  "q": "купи билет на междугородний автобус Сеул — Кандын"
+ },
+ {
+  "skill": "intercity-bus-booking",
+  "q": "book an intercity bus from Seoul to Chuncheon with Tmoney"
+ },
+ {
+  "skill": "jev-browser-actor",
+  "q": "агент в браузере не знает, куда кликнуть дальше — реши по скриншоту"
+ },
+ {
+  "skill": "jev-browser-actor",
+  "q": "decide the next browser action from this accessibility tree"
+ },
+ {
+  "skill": "jev-content-triage",
+  "q": "разбери 300 комментариев и скажи, на какие стоит ответить"
+ },
+ {
+  "skill": "jev-content-triage",
+  "q": "classify this batch of posts and filter out the noise"
+ },
+ {
+  "skill": "jevgrep",
+  "q": "как в этом репозитории работает обработка телеметрии?"
+ },
+ {
+  "skill": "jevgrep",
+  "q": "where in the codebase do we validate webhook signatures?"
+ },
+ {
+  "skill": "jev-judge",
+  "q": "два варианта архитектуры спорят — рассуди, кто прав"
+ },
+ {
+  "skill": "jev-judge",
+  "q": "arbitrate between these two plans with an independent verdict"
+ },
+ {
+  "skill": "jev-routing",
+  "q": "стоит ли выполнять это опасное действие на проде?"
+ },
+ {
+  "skill": "jev-routing",
+  "q": "is it safe to run this destructive command on production?"
+ },
+ {
+  "skill": "memory-consolidate",
+  "q": "в долгосрочной памяти накопились дубли — почисти и объединь"
+ },
+ {
+  "skill": "memory-consolidate",
+  "q": "consolidate and deduplicate the long-term memory entries"
+ },
+ {
+  "skill": "mobile-native",
+  "q": "в хроме нормально, а на телефоне инпут зумит и вёрстка едет"
+ },
+ {
+  "skill": "mobile-native",
+  "q": "the bottom sheet looks wrong on iPhone, safe area issues"
+ },
+ {
+  "skill": "notebooklm",
+  "q": "спроси мой NotebookLM-ноутбук, что там про бюджет проекта"
+ },
+ {
+  "skill": "notebooklm",
+  "q": "generate an audio overview from my notebook and add this YouTube source"
+ },
+ {
+  "skill": "obsidian-dataweave",
+  "q": "обработай заметку по zettelkasten и импортируй этот docx"
+ },
+ {
+  "skill": "obsidian-dataweave",
+  "q": "import the NotebookLM research into my Obsidian vault"
+ },
+ {
+  "skill": "pick-ui-library",
+  "q": "какую библиотеку взять для командного меню и toasts?"
+ },
+ {
+  "skill": "pick-ui-library",
+  "q": "what should I use for drag and drop and virtualized lists?"
+ },
+ {
+  "skill": "pizdec",
+  "q": "прогони аудит безопасности сервера, найди дыры"
+ },
+ {
+  "skill": "pizdec",
+  "q": "check my server for exposed secrets and open services"
+ },
+ {
+  "skill": "pr",
+  "q": "напиши описание для пул-реквеста"
+ },
+ {
+  "skill": "pr",
+  "q": "draft the PR body for this change"
+ },
+ {
+  "skill": "pricewin-booking-assistant",
+  "q": "забронируй мне отель в Токио на 3 ночи"
+ },
+ {
+  "skill": "pricewin-booking-assistant",
+  "q": "book a double room at this hotel for next weekend"
+ },
+ {
+  "skill": "aviasales",
+  "q": "найди авиабилеты Москва — Бангкок на май"
+ },
+ {
+  "skill": "aviasales",
+  "q": "find cheap one-way flights from Seoul to Tokyo next Friday"
+ },
+ {
+  "skill": "pricewin-hotel-deal-finder",
+  "q": "где дешевле всего отель в Пусане?"
+ },
+ {
+  "skill": "pricewin-hotel-deal-finder",
+  "q": "cheapest hotel in Daegu under $60?"
+ },
+ {
+  "skill": "pricewin-hotel-search",
+  "q": "покажи отели в Сеуле на 12–14 июня с ценами"
+ },
+ {
+  "skill": "pricewin-hotel-search",
+  "q": "list available hotels in Osaka with live prices"
+ },
+ {
+  "skill": "pricewin-price-comparison",
+  "q": "сравни цены номеров в отеле Lotte City на выходные"
+ },
+ {
+  "skill": "pricewin-price-comparison",
+  "q": "is Booking cheaper than Agoda for Hotel X on these dates?"
+ },
+ {
+  "skill": "prototype",
+  "q": "сделай несколько разных вариантов карточки прайсинга"
+ },
+ {
+  "skill": "prototype",
+  "q": "build me three genuinely different versions of this button"
+ },
+ {
+  "skill": "research-escalation",
+  "q": "какой флаг у ffmpeg для бесшовного loop, не помню точно"
+ },
+ {
+  "skill": "research-escalation",
+  "q": "does this library support Node 22? better check than guess"
+ },
+ {
+  "skill": "researcher",
+  "q": "нагугли, что пишут про новый релиз sherpa-onnx, собери источники и сделай выжимку"
+ },
+ {
+  "skill": "researcher",
+  "q": "research the pros and cons of Hy2 vs TUIC, give me links and a digest"
+ },
+ {
+  "skill": "restaurant-booking",
+  "q": "забронируй столик на двоих в ресторане сегодня на 19:00"
+ },
+ {
+  "skill": "restaurant-booking",
+  "q": "book a dinner table for four on Friday, check availability first"
+ },
+ {
+  "skill": "retro",
+  "q": "давай ретро: что улучшить в процессе работы, какие проверки добавить"
+ },
+ {
+  "skill": "retro",
+  "q": "run a retrospective on the last session, what should we improve"
+ },
+ {
+  "skill": "review-animations",
+  "q": "отревьюй анимации в этом диффе, всё ли по кrafт"
+ },
+ {
+  "skill": "review-animations",
+  "q": "review my animations against a high craft bar"
+ },
+ {
+  "skill": "scope-guard",
+  "q": "перед правками напомни, что именно я просил и что ты собираешься трогать"
+ },
+ {
+  "skill": "scope-guard",
+  "q": "list what was asked versus what you will touch before editing"
+ },
+ {
+  "skill": "setup-matt-pocock-skills",
+  "q": "настрой этот репозиторий под инженерные скиллы: трекер, метки, домен"
+ },
+ {
+  "skill": "setup-matt-pocock-skills",
+  "q": "set up this repo for the engineering skills suite"
+ },
+ {
+  "skill": "skill-creator",
+  "q": "напиши скилл: сохрани этот рецепт как SKILL.md"
+ },
+ {
+  "skill": "skill-creator",
+  "q": "создай новый skill и улучши его описание"
+ },
+ {
+  "skill": "systematic-debugging",
+  "q": "тест падает, не пойму почему — разберись в причине"
+ },
+ {
+  "skill": "systematic-debugging",
+  "q": "странный баг: иногда запрос возвращает 500, найди root cause"
+ },
+ {
+  "skill": "tdd",
+  "q": "давай сделаем фичу через TDD: сначала тест, потом код"
+ },
+ {
+  "skill": "tdd",
+  "q": "fix this bug test-first, red-green-refactor"
+ },
+ {
+  "skill": "teach",
+  "q": "научи меня regular expressions, хочу с нуля с примерами"
+ },
+ {
+  "skill": "teach",
+  "q": "объясни, как работает Event Loop, проведи урок"
+ },
+ {
+  "skill": "to-spec",
+  "q": "оформи всё, что мы обсудили, в спеку и опубликуй в трекер"
+ },
+ {
+  "skill": "to-spec",
+  "q": "turn this conversation into a spec"
+ },
+ {
+  "skill": "to-tickets",
+  "q": "разбей этот план на тикеты с зависимостями"
+ },
+ {
+  "skill": "to-tickets",
+  "q": "break the spec into tracer-bullet tickets"
+ },
+ {
+  "skill": "travel-planner",
+  "q": "составь маршрут по Японии на 10 дней с бюджетом"
+ },
+ {
+  "skill": "travel-planner",
+  "q": "plan a two-week trip to Portugal, itinerary and packing list"
+ },
+ {
+  "skill": "triage",
+  "q": "разбери новые issues и внешние PR, подготовь к работе агентов"
+ },
+ {
+  "skill": "triage",
+  "q": "triage the open issues and categorise them"
+ },
+ {
+  "skill": "typesafe-ai",
+  "q": "как поставить typesafe и сделать typed judgment на Jev в приложении?"
+ },
+ {
+  "skill": "typesafe-ai",
+  "q": "my Jev call throws a type error, help me debug the SDK usage"
+ },
+ {
+  "skill": "vercel-react-best-practices",
+  "q": "рефакторю компоненты React, подскажи перформанс-паттерны"
+ },
+ {
+  "skill": "vercel-react-best-practices",
+  "q": "how to optimize data fetching and bundle size in Next.js?"
+ },
+ {
+  "skill": "vercel-react-view-transitions",
+  "q": "хочу анимированный переход между страницами в Next.js через View Transitions"
+ },
+ {
+  "skill": "vercel-react-view-transitions",
+  "q": "add a shared-element transition between routes in React"
+ },
+ {
+  "skill": "verify-before-done",
+  "q": "перед тем как сказать готово, проверь результат по исходной задаче"
+ },
+ {
+  "skill": "verify-before-done",
+  "q": "verify the fix against the original request before saying done"
+ },
+ {
+  "skill": "voice-summary",
+  "q": "сделай выжимку из этого голосового сообщения"
+ },
+ {
+  "skill": "voice-summary",
+  "q": "summarize the audio file I sent, briefly"
+ },
+ {
+  "skill": "vpn-tspu-research",
+  "q": "изучи, как VLESS Reality ведёт себя против ТСПУ, и предложи тесты"
+ },
+ {
+  "skill": "vpn-tspu-research",
+  "q": "compare Hy2 and TUIC for DPI resistance and run an isolated test"
+ },
+ {
+  "skill": "wayfinder",
+  "q": "этот проект слишком большой для одной сессии — распиши карту работ и тикетов"
+ },
+ {
+  "skill": "wayfinder",
+  "q": "plan this huge chunk of work as a shared map of decision tickets"
+ },
+ {
+  "skill": "wizard",
+  "q": "мне нужно вручную ввести API-ключ в дашборде — сгенерируй пошаговый мастер"
+ },
+ {
+  "skill": "wizard",
+  "q": "create an interactive bash wizard for provisioning credentials"
+ },
+ {
+  "skill": "write-swift",
+  "q": "ревьюю Swift-код, подскажи по современным практикам и конкурентности"
+ },
+ {
+  "skill": "write-swift",
+  "q": "I have a data race in Swift 6 code, help me fix it"
+ },
+ {
+  "skill": "xrayebator",
+  "q": "мой VPN: добавь нового клиента и покажи конфиг"
+ },
+ {
+  "skill": "xrayebator",
+  "q": "generate a new VLESS REALITY key for my personal VPN"
+ },
+ {
+  "skill": "zaebal",
+  "q": "установи zaebal и настрой, чтоб не поддакивал"
+ },
+ {
+  "skill": "zaebal",
+  "q": "проверь заебал, всё ли корректно настроено"
+ },
+ {
+  "skill": "pricewin-flight-search",
+  "q": "сравни цены на рейс Москва — Стамбул на 15 июня между OTA-сайтами: Booking, Agoda и Trip.com — где дешевле?"
+ },
+ {
+  "skill": "pricewin-flight-search",
+  "q": "compare flight prices for Seoul to Tokyo next Friday across OTA sites Booking, Agoda and Trip.com — which one is cheapest?"
+ },
+ {
+  "skill": "scope-guard",
+  "q": "удали старые docker-тома, чтобы освободить место на диске"
+ },
+ {
+  "skill": "scope-guard",
+  "q": "перезапусти dsh и nginx, чтобы подхватить новый конфиг"
+ },
+ {
+  "skill": "fstab-disk-safety",
+  "q": "примонтируй новый диск и добавь его в fstab"
+ },
+ {
+  "skill": "scope-guard",
+  "q": "очисти iptables и настрой ufw заново, сервер торчит наружу"
+ },
+ {
+  "skill": "scope-guard",
+  "q": "force-push в main, чтобы перезаписать историю ветки"
+ },
+ {
+  "skill": "fstab-disk-safety",
+  "q": "расширь раздел под /var — место кончается, resize нужен"
+ },
+ {
+  "skill": "3x-ui-setup",
+  "q": "поставь мне личный прокси-сервер с xui панелью на новом vps"
+ },
+ {
+  "skill": "animation-vocabulary",
+  "q": "этот блок как будто подпрыгивает и возвращается на место — как называется такой приём?"
+ },
+ {
+  "skill": "animation-vocabulary",
+  "q": "не реализовывай, просто скажи как называется движение, когда карточка въезжает сбоку с торможением"
+ },
+ {
+  "skill": "ask-sonner",
+  "q": "соннер тост не видно, оказывается за модалкой рендерится"
+ },
+ {
+  "skill": "ask-sonner",
+  "q": "sonner toasts ignore dark mode, how do I fix that?"
+ },
+ {
+  "skill": "code-review",
+  "q": "глянь дифф от релиза v1.2 до мастера — всё ли сделано по тикету"
+ },
+ {
+  "skill": "description-optimizer",
+  "q": "поставил пачку новых скиллов, описания кривые — причеши весь каталог"
+ },
+ {
+  "skill": "dsh-update",
+  "q": "приехало обновление харнеса, накатить ядро и плагины?"
+ },
+ {
+  "skill": "emotional-support",
+  "q": "что-то сегодня совсем дно, поддержи меня"
+ },
+ {
+  "skill": "google-flights",
+  "q": "посмотри в гугл флайтс билеты алматы — стамбул на май"
+ },
+ {
+  "skill": "google-flights",
+  "q": "check flight schedule ICN to NYC next month on Google Flights"
+ },
+ {
+  "skill": "google-flights",
+  "q": "каким рейсом по расписанию летают Пусан — Сайгон, глянь в гугл флайтс"
+ },
+ {
+  "skill": "gsap-frameworks",
+  "q": "в Angular анимации на gsap — где правильно прибирать твины за компонентом"
+ },
+ {
+  "skill": "gsap-react",
+  "q": "в next.js анимации дёргаются после навигации, что не так с cleanup у gsap"
+ },
+ {
+  "skill": "gsap-utils",
+  "q": "надо зажать значение в 0..100 и плавно интерполировать между точками — есть хелпер в gsap?"
+ },
+ {
+  "skill": "gsap-utils",
+  "q": "clamp a number with gsap.utils and snap it to steps of 5?"
+ },
+ {
+  "skill": "implement-spec",
+  "q": "вся спека готова — гоняй тикеты параллельно сабагентами на интеграционной ветке"
+ },
+ {
+  "skill": "implement-spec",
+  "q": "накатим сразу все фичи из спеки разом, а не по одной"
+ },
+ {
+  "skill": "intercity-bus-booking",
+  "q": "надо уехать из Сеула в Каннын на 시외버се, купи билет"
+ },
+ {
+  "skill": "jev-judge",
+  "q": "два агента разошлись во мнениях по схеме БД — пусть независимая сторона вынесет вердикт"
+ },
+ {
+  "skill": "memory-consolidate",
+  "q": "в долговременной памяти пользователя куча повторов, сделай уборку"
+ },
+ {
+  "skill": "obsidian-dataweave",
+  "q": "перекинь выжимку из NotebookLM в мой vault и разбей на атомарные заметки"
+ },
+ {
+  "skill": "pr",
+  "q": "что написать в body этого пулла? собери сам"
+ },
+ {
+  "skill": "pricewin-hotel-deal-finder",
+  "q": "в какой из систем бронирования дешевле всего переночевать в Сеуле, бюджет до 80$"
+ },
+ {
+  "skill": "prototype",
+  "q": "надо 4 разных варианта хедера, покажи пикером на выбор"
+ },
+ {
+  "skill": "prototype",
+  "q": "give me a couple of genuinely distinct takes on this pricing toggle"
+ },
+ {
+  "skill": "retro",
+  "q": "после такого большого релиза давай ретроспективу: что в процессе подкрутить"
+ },
+ {
+  "skill": "tdd",
+  "q": "по этому багу сначала падающий тест, потом чинить"
+ },
+ {
+  "skill": "to-tickets",
+  "q": "нарежь это видение на задачи в трекере со связями и блокировками"
+ },
+ {
+  "skill": "typesafe-ai",
+  "q": "какие импорты у typesafe и как типизировать verdict от jev в коде?"
+ },
+ {
+  "skill": "verify-before-done",
+  "q": "прежде чем отчитаться, что пофиксил, сверься с тем, что я изначально просил"
+ },
+ {
+  "skill": "verify-before-done",
+  "q": "double-check we did exactly what was asked before you wrap up"
+ },
+ {
+  "skill": "wayfinder",
+  "q": "цель до конца не ясна и работы на месяцы — разложи на трекер и движимся по одному тикету"
+ },
+ {
+  "skill": "xrayebator",
+  "q": "мой впн: смени exit ip и покажи свежий конфиг для клиента"
+ },
+ {
+  "skill": "agent-browser",
+  "q": "пройди по сайтам конкурентов и собери цены в таблицу"
+ },
+ {
+  "skill": "apple-design",
+  "q": "хочу, чтобы мой дашборд ощущался как штука из купертино — та же пластика и стекло"
+ },
+ {
+  "skill": "break-ui",
+  "q": "а что если юзер вбобёт имя на 5000 символов и эмодзи в каждый инпут? проверь, что развалится"
+ },
+ {
+  "skill": "codebase-design",
+  "q": "биллинг превратился в god-object — хочу спрятать всю сложность за узким интерфейсом, как правильно разрезать"
+ },
+ {
+  "skill": "codebase-design",
+  "q": "хочу, чтобы про платежи можно было вообще ничего не знать снаружи — спрячь всё за узкой стенкой"
+ },
+ {
+  "skill": "diagnosing-bugs",
+  "q": "уже третий раз чиню этот flaky-тест и он опять красный в CI, локально зелёный"
+ },
+ {
+  "skill": "diagnosing-bugs",
+  "q": "падает только под нагрузкой, воспроизвести не могу никак — помоги докопаться"
+ },
+ {
+  "skill": "elevenlabs-living-voice",
+  "q": "заказчик сказал, что диктор читает слишком быстро и монотонно — поправь текст под озвучку"
+ },
+ {
+  "skill": "express-bus-booking",
+  "q": "хочу уехать на KOBUS из Тэгу в Сеул завтра утром, возьми билеты"
+ },
+ {
+  "skill": "grill-me",
+  "q": "грилл-ми, пожалуйста"
+ },
+ {
+  "skill": "grill-me",
+  "q": "/grill-me"
+ },
+ {
+  "skill": "gsap-performance",
+  "q": "страница подтормаживает когда gsap двигает много карточек, подскролль — фризы"
+ },
+ {
+  "skill": "gsap-performance",
+  "q": "профайлер показывает layout thrashing из-за анимаций gsap, что делать?"
+ },
+ {
+  "skill": "gsap-scrolltrigger",
+  "q": "как привязать прогресс анимации к скроллу, чтобы крутилось туда-сюда вместе с колесом"
+ },
+ {
+  "skill": "handoff",
+  "q": "контекст кончается — упакуй всё важное в документ, чтобы новый агент продолжил без потерь"
+ },
+ {
+  "skill": "improve-animations",
+  "q": "пройдись по кодовой базе и скажи, где анимации проседают и что с этим делать"
+ },
+ {
+  "skill": "improve-animations",
+  "q": "прогони аудит анимаций по кодовой базе и дай план улучшений, код не трогай"
+ },
+ {
+  "skill": "jev-browser-actor",
+  "q": "бот в браузере стоит на месте — вот скриншот, скажи куда тыкать дальше"
+ },
+ {
+  "skill": "jev-browser-actor",
+  "q": "stuck on this page, from the a11y tree tell me what to type next or stop"
+ },
+ {
+  "skill": "jev-routing",
+  "q": "определи приоритет: сначала чинить оплату или уведомления? не угадывай, реши по-дешёвому"
+ },
+ {
+  "skill": "jev-routing",
+  "q": "стоит ли откатывать этот деплой, или обойдётся? дай быструю оценку"
+ },
+ {
+  "skill": "mobile-native",
+  "q": "в сафари на айфоне тап по карточке срабатывает с задержкой и подсвечивается серым"
+ },
+ {
+  "skill": "pick-ui-library",
+  "q": "чем рисовать графики в реакт-проекте, чтобы не пожалеть?"
+ },
+ {
+  "skill": "pricewin-booking-assistant",
+  "q": "оформи и оплати номер в этом отеле на грядущие выходные"
+ },
+ {
+  "skill": "pricewin-hotel-search",
+  "q": "что есть свободного в Пусане на первые числа июля и почём?"
+ },
+ {
+  "skill": "pricewin-hotel-search",
+  "q": "пробей наличие и тарифы отелей в Киото на 3 ночи"
+ },
+ {
+  "skill": "research-escalation",
+  "q": "не помню точный синтаксис systemctl drop-in — не выдумывай, сверься"
+ },
+ {
+  "skill": "research-escalation",
+  "q": "какая максимальная цена подписки у этого сервиса сейчас? проверь, а то врать не надо"
+ },
+ {
+  "skill": "review-animations",
+  "q": "посмотри мой дифф с transition'ами — где я накосячил по крафту"
+ },
+ {
+  "skill": "review-animations",
+  "q": "проверь motion в этой ветке, флагни слабые места"
+ },
+ {
+  "skill": "teach",
+  "q": "хочу разобраться в git rebase с нуля, проведи занятие с практикой"
+ },
+ {
+  "skill": "teach",
+  "q": "покажи и объясни, как устроены промисы — хочу урок с упражнениями"
+ },
+ {
+  "skill": "travel-planner",
+  "q": "едем вдвоём в Лиссабон на неделю, накидай план по дням и что взять с собой"
+ },
+ {
+  "skill": "vercel-react-best-practices",
+  "q": "компоненты перерисовываются слишком часто — как правильно разрулить по гайдам верcел"
+ },
+ {
+  "skill": "voice-summary",
+  "q": "тут часовая запись вебинара, сожми в тезисы"
+ },
+ {
+  "skill": "wizard",
+  "q": "предстоит разовый переезд DNS на новый регистратор — сделай мастер, чтобы я руками прошёл по шагам"
+ },
+ {
+  "skill": "zaebal",
+  "q": "заебал уже установлен? проверь, что не льстит"
+ },
+ {
+  "skill": "animate-expo",
+  "q": "в expo-приложении экраны переключаются без анимации, сделай плавный переход и хаптику"
+ },
+ {
+  "skill": "ask-matt",
+  "q": "а есть ли у тебя скилл/флоу, чтобы разговор оформить в спеку?"
+ },
+ {
+  "skill": "ask-matt",
+  "q": "есть ли у тебя флоу для ревью кода перед мерджем?"
+ },
+ {
+  "skill": "browser-use",
+  "q": "дай сырой cdp-сессии доступ к вкладке — вытащи console logs и cookies"
+ },
+ {
+  "skill": "browser-use",
+  "q": "connect to the running chrome via devtools protocol and evaluate this js in the page"
+ },
+ {
+  "skill": "css-graphics",
+  "q": "сделай баннер-фон целиком на цсс и сохрани как png"
+ },
+ {
+  "skill": "domain-modeling",
+  "q": "мы путаемся в словах клиент/заказчик/пользователь — прогони по коду и зафиксируй в глоссарии"
+ },
+ {
+  "skill": "emil-design-eng",
+  "q": "модалка открывается резко и дёшево выглядит — отполируй ощущения"
+ },
+ {
+  "skill": "find-animation-opportunities",
+  "q": "пробеги по лендингу и покажи, где движение сделало бы его живее"
+ },
+ {
+  "skill": "gsap-core",
+  "q": "появление элементов списком с задержкой друг за другом на gsap"
+ },
+ {
+  "skill": "gsap-core",
+  "q": "анимируй прозрачность и масштаб дива через gsap.fromTo с elastic ease"
+ },
+ {
+  "skill": "gsap-plugins",
+  "q": "текст должен набираться по буквам с эффектом помех — чем в gsap это делается"
+ },
+ {
+  "skill": "gsap-plugins",
+  "q": "want morphing between two svg shapes, which gsap plugin and how to register it?"
+ },
+ {
+  "skill": "gsap-timeline",
+  "q": "собери в gsap цепочку: заголовок, потом подзаголовок, потом кнопка, с перекрытием по времени"
+ },
+ {
+  "skill": "implement",
+  "q": "взял в работу SECURITY-7 — делай по тикету с тестами"
+ },
+ {
+  "skill": "improve-codebase-architecture",
+  "q": "поскань репу и скажи, какие модули слишком поверхностные, отчётом"
+ },
+ {
+  "skill": "jev-content-triage",
+  "q": "вот пачка из 50 комментариев под постом — отфильтруй шум, что заслуживает ответа"
+ },
+ {
+  "skill": "jev-content-triage",
+  "q": "просей ленту за неделю, собери дайджест стоящего"
+ },
+ {
+  "skill": "jevgrep",
+  "q": "где в коде мы считаем лимиты тарифа и почему именно так"
+ },
+ {
+  "skill": "notebooklm",
+  "q": "задай вопрос моему ноуту в NotebookLM про сроки релиза, с цитатами"
+ },
+ {
+  "skill": "pizdec",
+  "q": "проверь контейнеры и API на предмет утечек и открытых наружу сервисов, ничего не меняя"
+ },
+ {
+  "skill": "pricewin-flight-search",
+  "q": "сколько сейчас живые тарифы Сеул — Дананг на конец августа, один конец, ссылку на покупку дай"
+ },
+ {
+  "skill": "pricewin-flight-search",
+  "q": "cheapest airfare ICN to BKK round trip in October, with bag?"
+ },
+ {
+  "skill": "pricewin-price-comparison",
+  "q": "в каком OTA бронировать Signiel Busan на 12–14 числа выгоднее и с бесплатной отменой?"
+ },
+ {
+  "skill": "restaurant-booking",
+  "q": "забронируй на четверг столик на шестерых, где есть места"
+ },
+ {
+  "skill": "setup-matt-pocock-skills",
+  "q": "впервые беру эти инженерные скиллы — подготовь репо: трекер и метки"
+ },
+ {
+  "skill": "setup-matt-pocock-skills",
+  "q": "init this repo for the grill/spec/tickets workflow, one-time setup"
+ },
+ {
+  "skill": "to-spec",
+  "q": "оформи в спеку"
+ },
+ {
+  "skill": "triage",
+  "q": "трайажни входящие: новые ишьюсы и внешние пуллы, подготовь брифы"
+ },
+ {
+  "skill": "vercel-react-view-transitions",
+  "q": "при смене таба хочу общий элемент перелетающим через startTransition API реакта"
+ },
+ {
+  "skill": "vercel-react-view-transitions",
+  "q": "route change in next.js should morph the hero image between pages, addTransitionType"
+ },
+ {
+  "skill": "vpn-tspu-research",
+  "q": "посмотри, как Mieru живёт против DPI у нашего оператора, и прогони изолированный тест"
+ },
+ {
+  "skill": "write-swift",
+  "q": "мигрирую старый objc-проект на современный свифт — с чего начать по конкурентности"
+ },
+ {
+  "skill": "pick-ui-library",
+  "q": "что взять для command palette и виртуализированного списка в реакте?"
+ }
+]

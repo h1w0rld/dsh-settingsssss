@@ -1,0 +1,126 @@
+diff --git a/lib/index.js b/lib/index.js
+index ebdf3580d318f1acaf53069bac04f6697435066f..8a9b512a525febb745ebff0415221fe5a621e35a 100644
+--- a/lib/index.js
++++ b/lib/index.js
+@@ -4799,12 +4799,8 @@ function buildSetParentTool(host) {
+ 	return defineTool({
+ 		name: "task_board_set_parent",
+ 		description: [
+-			"Attach an existing task under a parent (making it a subtask) or detach it back to the root board by setting its parentId.",
+-			"Pass an empty parentId to detach.",
+-			"The Host refuses the link when the parent is unknown or archived, when the moved task is one of its own descendants, when the resulting depth exceeds the deployment subtask limit (default one level, maximum three), or while the task has an unsettled execution (its link may still be a running cascade parent pointer).",
+-			"Running a task runs its whole subtree concurrently; a parent card settles only after its own turn and every direct subtask settle.",
+-			"Triggers: 任务看板, task board, 看板, 子任务, subtask, 关联任务, link task, 解除关联, detach."
+-		].join(" "),
++			"Attach a task under a parent (subtask) or detach it to root with parentId empty string. Refused for unknown/archived parents, own descendants, depth over the limit (default 1, max 3), or unsettled executions.",
++			"Triggers: link task, detach, 关联任务."].join(" "),
+ 		parameters: {
+ 			taskId: {
+ 				type: "string",
+@@ -4844,14 +4840,8 @@ function buildRunTool(host) {
+ 	return defineTool({
+ 		name: "task_board_run",
+ 		description: [
+-			"Run a task on the board now, or re-run a settled one.",
+-			"Running a task also runs its whole subtask tree CONCURRENTLY: the Host opens one real DSH session per member under one run group, each replaying its card pinned workspace, agent preset, permission and model; a subtask that does not pin them inherits its nearest ancestor.",
+-			"The parent card stays in the running column until its own turn and every direct subtask have settled, and it fails when any member failed; one failing subtask never stops the others.",
+-			"A card whose effective permission is above the deployment session default is refused with confirmation-required until a HUMAN confirms the binding in the board UI; this tool cannot confirm it.",
+-			"A card whose task carries teamRun instead starts ONE Team Lead session and the Host spawns a teammate per subtask inside it, so those cards run as an Agent Team rather than as independent sessions; that mode needs the deployment Agent Teams service and is refused when it is missing.",
+-			"Executions consume real API quota. Sessions are created asynchronously, so read their ids and outcomes back with task_board_get.",
+-			"Triggers: 任务看板, task board, 看板, 执行任务, run task, 重新执行, rerun, 子任务, subtask."
+-		].join(" "),
++			"Run or re-run a task on the board now. Running a root task runs its whole subtask tree CONCURRENTLY (one session per member); the parent stays running until every member settles and fails if any failed. Runs above the session-default permission stay blocked until a human confirms the binding in the board UI. teamRun cards start one Lead session with a teammate per subtask instead. Consumes real API quota; sessions are async — read ids/outcomes with task_board_get.",
++			"Triggers: run task, rerun, 执行任务."].join(" "),
+ 		parameters: {
+ 			taskId: {
+ 				type: "string",
+@@ -4901,13 +4891,8 @@ function buildManageTool(host) {
+ 	return defineTool({
+ 		name: "task_board_manage",
+ 		description: [
+-			"Move, archive, restore, delete, or settle one task board card.",
+-			"move-todo and move-backlog are the manual column moves; a running card cannot be moved.",
+-			"settle force-closes the open execution of a card the board can no longer observe (a stuck running card) and records it cancelled with the caller as the reason, so the card returns to the todo column and can be run again.",
+-			"archive takes the whole subtask tree off the board and is refused while any member has an unsettled execution; restore brings the task, its ancestors and its subtree back; delete removes one card and is refused while it still has subtasks (detach or delete them first) or while it runs.",
+-			"It cannot confirm a permission binding: the confirmation gate is a human act performed in the board UI.",
+-			"Triggers: 任务看板, task board, 看板, 归档, archive, 删除任务, delete task, 移动任务, move task, 卡住, stuck, 强制结算, settle."
+-		].join(" "),
++			"Lifecycle moves for one card: move-todo/move-backlog (manual moves; running cards refuse), archive/restore a subtree (refused while a member is unsettled), delete (refused with subtasks or while running), settle (force-close a stuck running execution as cancelled so the card can rerun). Cannot confirm permission bindings — that is a human act in the board UI.",
++			"Triggers: archive, delete task, move task, stuck, settle."].join(" "),
+ 		parameters: {
+ 			taskId: {
+ 				type: "string",
+@@ -4988,13 +4973,8 @@ function buildScheduleTool(host) {
+ 	return defineTool({
+ 		name: "task_board_schedule",
+ 		description: [
+-			"Arm, change, or disarm a task scheduled runs (5-field cron; day-of-month and day-of-week follow Vixie semantics: both restricted means OR, otherwise AND).",
+-			"The cron wall clock is read in the rule stored IANA time zone; omit timeZone to use the Host zone reported by task_board_list/task_board_get. DST gaps are skipped and an ambiguous fall-back time fires once, at the earlier instant.",
+-			"A due scheduled task runs the same cascade a manual run does, so a root task runs its whole subtask tree.",
+-			"A schedule whose tree contains an unconfirmed above-default permission is refused and rolls to its next occurrence; the reason is reported in the list board summary as schedulerError.",
+-			"Missed occurrences during Host downtime are skipped, never queued; a task that is already running skips its occurrence.",
+-			"Triggers: 任务看板, task board, 看板, 定时任务, schedule, cron, 每天执行."
+-		].join(" "),
++			"Arm, change, or disarm a card's 5-field cron schedule (Vixie day-of-month/day-of-week semantics; host time zone unless timeZone given; DST gaps skipped). A due schedule runs the same cascade as a manual run; trees with unconfirmed above-default permission are refused and roll to the next occurrence; missed occurrences during downtime are skipped, never queued.",
++			"Triggers: schedule, cron, 定时任务."].join(" "),
+ 		parameters: {
+ 			taskId: {
+ 				type: "string",
+@@ -5049,12 +5029,8 @@ function buildListTool(host) {
+ 	return defineTool({
+ 		name: "task_board_list",
+ 		description: [
+-			"List tasks on the DSH task board (the Host-authoritative ledger behind the Web GUI task board).",
+-			"Filters: status column, parentId (direct subtasks), rootsOnly, tag, free-text query, and archived inclusion.",
+-			"Returns each task id, title, column, parent/subtask link, execution targets, schedule and latest run outcome, plus the board summary (revision, time zone, subtask depth limit, session-default permission).",
+-			"Use task_board_get for one task in full, task_board_create to add work, and task_board_run to execute it.",
+-			"Triggers: 任务看板, task board, 看板, 子任务, subtask, task list, 定时任务, scheduled task."
+-		].join(" "),
++			"List board tasks with id, title, column, links, targets, schedule, latest outcome, plus a board summary. Filters: status column, parentId, rootsOnly, tag, free-text query, archived. Use task_board_get for one card in full.",
++			"Triggers: task list."].join(" "),
+ 		parameters: {
+ 			status: {
+ 				type: "string",
+@@ -5131,10 +5107,8 @@ function buildGetTool(host) {
+ 	return defineTool({
+ 		name: "task_board_get",
+ 		description: [
+-			"Read one task board card in full: prompt, description, labels, column, parent link, direct subtasks, execution targets, schedule, permission gate state, and the last ten execution attempts with their session ids and outcomes.",
+-			"Use it before running or editing a card, and after a run to read the settled outcome.",
+-			"Triggers: 任务看板, task board, 看板, 子任务, subtask, task detail."
+-		].join(" "),
++			"Read one board card in full: prompt, description, labels, column, parent/subtask links, execution targets, schedule, permission gate, and the last ten runs with outcomes. Use before running/editing a card and after a run to read the settled outcome.",
++			"Triggers: task detail."].join(" "),
+ 		parameters: { taskId: {
+ 			type: "string",
+ 			required: true,
+@@ -5160,12 +5134,8 @@ function buildCreateTool(host) {
+ 	return defineTool({
+ 		name: "task_board_create",
+ 		description: [
+-			"Create a task on the DSH task board, or a subtask by passing parentId.",
+-			"A subtask inherits every execution target it does not override (workspace, agent preset, permission, model) from its parent, and inherits the parent human permission confirmation together with an inherited binding.",
+-			"The deployment caps subtask depth (default one level, maximum three): a subtask of a subtask is refused unless the board is configured deeper.",
+-			"The task lands in the todo column and does NOT run; call task_board_run to execute it.",
+-			"Triggers: 任务看板, task board, 看板, 新建任务, create task, 子任务, subtask, 定时任务."
+-		].join(" "),
++			"Create a board task (lands in the todo column, does NOT run; execute with task_board_run). Pass parentId to make a subtask — it inherits the parent's workspace/preset/permission/model and depth is capped. Optional: cron schedule, tags, teamRun, pinned permission/model. permission above session default needs human confirmation in the board UI.",
++			"Triggers: create task, new task, 新建任务."].join(" "),
+ 		parameters: {
+ 			title: {
+ 				type: "string",
+@@ -5301,12 +5271,8 @@ function buildUpdateTool(host) {
+ 	return defineTool({
+ 		name: "task_board_update",
+ 		description: [
+-			"Edit a task board card: title, description, prompt, labels, and the execution targets (workspace, agent preset, permission, model, session reuse).",
+-			"Only the fields you pass change; pass an empty string to clear a target, or an empty labels array to clear the labels.",
+-			"Title, description and prompt freeze once the task has started executing; the execution targets stay editable because they only affect future runs.",
+-			"Changing the pinned permission re-arms the permission confirmation gate.",
+-			"Triggers: 任务看板, task board, 看板, 修改任务, edit task, 子任务, 标签, tags."
+-		].join(" "),
++			"Edit a card: title, description, prompt, labels, and execution targets (workspace, agent preset, permission, model, session reuse); other fields change nothing. Title/description/prompt freeze once running; empty string clears a target. Changing permission re-arms the human confirmation gate.",
++			"Triggers: edit task, tags."].join(" "),
+ 		parameters: {
+ 			taskId: {
+ 				type: "string",

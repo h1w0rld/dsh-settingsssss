@@ -1,0 +1,15 @@
+secrets*
+*.enc
+*.env
+!*.env.example
+!secrets.env.example
+plugins/dsh-guard/state.json
+backups/
+quarantine/
+node_modules/
+__pycache__/
+staging/
+.sandbox/
+
+tools/archive/
+*.bak*

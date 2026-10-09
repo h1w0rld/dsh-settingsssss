@@ -1,0 +1,5 @@
+# Bundle patch: регистрирует плагин в ростере web-профиля.
+# Ставится: dsh plugin --profile web add file:/opt/projects/dsh-recovery-resume
+- insert:
+    - id: recovery-resume
+      name: '@h1w0rld/dsh-recovery-resume'

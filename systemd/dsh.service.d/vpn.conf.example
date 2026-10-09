@@ -1,0 +1,6 @@
+# Шаблон drop-in /etc/systemd/system/dsh.service.d/vpn.conf (опционально):
+# доступ к web UI из VPN через nginx 172.17.0.1:3081.
+# Раскомментировать только при такой же топологии.
+# [Service]
+# ExecStart=
+# ExecStart=/usr/bin/env dsh web --no-open --trusted-host 172.17.0.1:3081

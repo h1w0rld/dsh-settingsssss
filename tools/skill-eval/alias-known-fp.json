@@ -1,0 +1,8 @@
+[
+  {
+    "q": "посмотри мой дифф с transition'ами — где я накосячил по крафту",
+    "expect": "review-animations",
+    "got": "vercel-react-view-transitions",
+    "reason": "name-token этап dsh-skill-folder, алиасами не лечится; лечится только правкой плагина (минимальный score ≥2)"
+  }
+]

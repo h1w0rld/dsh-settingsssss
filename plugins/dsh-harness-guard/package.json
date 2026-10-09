@@ -1,0 +1,35 @@
+{
+  "name": "@h1w0rld/dsh-harness-guard",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "description": "DSH host plugin: host-level confirmation (tools/pre-execute ask) for RED tool calls — destructive bash, protected files, skill writes; works regardless of model quality, fail-open",
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "lib",
+    "test",
+    "cordis.patch.yml",
+    "README.md",
+    "INSTALL.md"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "safety",
+    "guard",
+    "approval"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/rules.test.mjs"
+  },
+  "peerDependencies": {}
+}

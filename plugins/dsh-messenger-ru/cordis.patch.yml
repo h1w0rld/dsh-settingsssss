@@ -1,0 +1,19 @@
+- insert:
+    - id: messenger
+      name: '@h1w0rld/dsh-messenger-ru'
+      config:
+        telegram:
+          enabled: true
+          tokenRef: TELEGRAM_BOT_TOKEN
+          allowedChatIds:
+            - '${TELEGRAM_ALLOWED_CHAT_ID}'
+          allowedUserIds:
+            - '${TELEGRAM_ALLOWED_CHAT_ID}'
+          privateChatsOnly: true
+          pollTimeoutSeconds: 30
+          requestTimeoutMs: 15000
+          # Пусто = облачный Bot API (лимит скачивания 20 МиБ).
+          # http(s)-база (например http://127.0.0.1:8081) = Local Bot API Server (до 2000 МиБ).
+          apiBaseUrl: ''
+          # Секрет для /claim <код>: выдача прав оператора из Telegram без правки конфига.
+          claimCode: ''

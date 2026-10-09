@@ -1,0 +1,147 @@
+{
+    "name": "@h1w0rld/dsh-messenger-ru",
+    "version": "0.14.2-ru.3",
+    "description": "Messenger bridge (RU fork) for DeepSeek Harness — Telegram: файлы как пути, форум-темы как сессии, дежурный режим /away, /goal /compact /diag. Основан на @syncended/dsh-messenger 0.14.2",
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        },
+        "./client": "./lib/client.js",
+        "./cordis.patch.yml": "./cordis.patch.yml",
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist",
+        "lib/client.js",
+        "python/worker.py",
+        "stt/scripts",
+        "stt/chrome-src",
+        "cordis.patch.yml",
+        "docs/assets/telegram-settings.png",
+        "README.md",
+        "LICENSE"
+    ],
+    "dsh": {
+        "bundle": {
+            "patch": "./cordis.patch.yml"
+        },
+        "client": {
+            "inject": [
+                "@deepseek-ai/dsh-client-runtime",
+                "@deepseek-ai/dsh-client-ui-settings",
+                "@deepseek-ai/dsh-api-remotes"
+            ],
+            "platform": "web"
+        }
+    },
+    "scripts": {
+        "build": "pnpm clean && tsc -p tsconfig.build.json && node --check lib/client.js",
+        "typecheck": "tsc -p tsconfig.json --noEmit",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "check": "pnpm typecheck && pnpm test && pnpm build",
+        "clean": "rm -rf dist",
+        "prepare": "pnpm build"
+    },
+    "keywords": [
+        "deepseek",
+        "deepseek-harness",
+        "dsh",
+        "cordis",
+        "telegram",
+        "messenger",
+        "chatbot"
+    ],
+    "author": "syncended",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/syncended/deepseek-harness-messenger.git"
+    },
+    "bugs": {
+        "url": "https://github.com/syncended/deepseek-harness-messenger/issues"
+    },
+    "homepage": "https://github.com/syncended/deepseek-harness-messenger#readme",
+    "publishConfig": {
+        "access": "public"
+    },
+    "peerDependencies": {
+        "@deepseek-ai/cordis": "^4.0.2",
+        "@deepseek-ai/dsh-agent": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-attachment": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-api-remotes": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-api-session-controller": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-client-connection": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-client-runtime": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-client-ui-settings": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-credentials": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-fs": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-invariants": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-llm": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-permission-presets": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-session": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-settings": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-storage": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-storage-domain": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-tools": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-user-questions": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-workspace": "^0.2.0-rc.2",
+        "react": "^18.2.0"
+    },
+    "peerDependenciesMeta": {
+        "@deepseek-ai/dsh-api-remotes": {
+            "optional": true
+        },
+        "@deepseek-ai/dsh-client-connection": {
+            "optional": true
+        },
+        "@deepseek-ai/dsh-client-runtime": {
+            "optional": true
+        },
+        "@deepseek-ai/dsh-client-ui-settings": {
+            "optional": true
+        },
+        "react": {
+            "optional": true
+        }
+    },
+    "dependencies": {
+        "@deepseek-ai/schemastery": "^3.18.2",
+        "zod": "^4.4.3"
+    },
+    "devDependencies": {
+        "@deepseek-ai/cordis": "^4.0.2",
+        "@deepseek-ai/dsh-agent": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-api-session-controller": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-attachment": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-brand": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-credentials": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-fs": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-invariants": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-llm": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-permission-presets": "0.2.0-rc.2",
+        "@deepseek-ai/dsh-scope": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-session": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-settings": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-storage": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-storage-domain": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-storage-json": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-system-prompt": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-timeout": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-typert-protocol": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-tools": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-user-questions": "^0.2.0-rc.2",
+        "@deepseek-ai/dsh-workspace": "^0.2.0-rc.2",
+        "@types/node": "^24.0.0",
+        "typescript": "^5.9.0",
+        "vitest": "^3.2.0"
+    },
+    "engines": {
+        "node": ">=22"
+    },
+    "packageManager": "pnpm@10.17.1"
+}
